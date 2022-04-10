@@ -1,46 +1,142 @@
-# Getting Started with Create React App
+<div id="top"></div>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<!-- PROJECT INTRO -->
+<br />
+<div align="center">
+  <h3 align="center">React Minesweeper</h3>
 
-## Available Scripts
+  <p align="center">
+    The good old Minesweeper, but coded in ReactJS and with a declarative UI!
+    <br />
+    <a href="https://bottoni.com.br/react/forms" target="_blank"><strong>Check the Demo</strong></a>
+  </p>
+</div>
 
-In the project directory, you can run:
 
-### `yarn start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+<!-- TABLE OF CONTENTS -->
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#built-with">Built With</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#installation">Installation</a></li>
+      </ul>
+    </li>
+    <li><a href="#using-the-component">Using the Component</a></li>
+    <li><a href="#contributing">Contributing</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ol>
+</details>
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
 
-### `yarn test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<!-- ABOUT THE PROJECT -->
+## About The Project
 
-### `yarn build`
+React Minesweeper is a small hobby project that I've created to put in practice a new way to create interfaces for WEB applications.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The game component was entirely created with a declarative UI.
+That means, we have not a single CSS file in use.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Also, no image file was used to create the UI.
+What you might think is an image, is basically an emoticon.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+I made use of **Chakra UI** to create the interface.
+And the rest of the code is simply **Typescript**.
 
-### `yarn eject`
+Feel free to fork the project and use it as you will.
+Just mention me somewhere :D
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+<!-- BUILT WITH -->
+### Built With
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+The only dependency in this project is the **Chakra UI**, that is used to create the UI.
 
-## Learn More
+* [Chakra UI](https://chakra-ui.com)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+<p align="right">(<a href="#top">back to top</a>)</p>
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+
+
+<!-- GETTING STARTED -->
+## Getting Started
+
+Running your own "React Minesweeper" project is very simple!
+
+### Installation
+
+1. Clone the repo
+   ```sh
+   git clone https://github.com/marcelo-bottoni/react-minesweeper
+   ```
+2. Install packages
+   ```sh
+   yarn install
+   ```
+3. Run the application
+   ```sh
+   yarn dev
+   ```
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+
+
+<!-- USING THE COMPONENT -->
+## Using the Component
+
+The "React Minesweeper" project provides one component called "Minesweeper" that you can add anywhere and have the game up and running! Check the code below. It adds the game to a ReactJS page.
+
+```react.js
+  import { Minesweeper } from './components/Minesweeper';
+
+  export function SamplePage ()
+  {
+    return (
+      <div>
+
+        <Minesweeper size={{rows: 9, columns: 9}} bombs={10}/>
+
+      </div>
+    );
+  }
+```
+
+
+
+<!-- CONTRIBUTING -->
+## Contributing
+
+Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions are **greatly appreciated**.
+
+If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
+Don't forget to give the project a star! Thanks again!
+
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+
+
+<!-- CONTACT -->
+## Contact
+
+Marcelo F Bottoni - [@marcelo-bottoni](https://www.linkedin.com/in/marcelo-bottoni) - marcelo.bottoni.85@gmail.com
+
+Project Link: [https://github.com/marcelo-bottoni/react-minesweeper](https://github.com/marcelo-bottoni/react-minesweeper)
+
+<p align="right">(<a href="#top">back to top</a>)</p>
