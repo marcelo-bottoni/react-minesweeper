@@ -8,7 +8,7 @@
   <p align="center">
     The good old Minesweeper, but coded in ReactJS and with a declarative UI!
     <br />
-    <a href="https://bottoni.com.br/react/forms" target="_blank"><strong>Check the Demo</strong></a>
+    <a href="https://react-minesweeper-demo.vercel.app" target="_blank"><strong>Check the Demo</strong></a>
   </p>
 </div>
 
